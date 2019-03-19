@@ -1,9 +1,12 @@
 package ch.axa.Objects;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+@Entity
+@Table(name = "user")
 public class User {
 
     @Id
@@ -14,7 +17,10 @@ public class User {
     private String username;
     private String firstname;
     private String lastname;
-    private Date bithday;
+
+    @Temporal(TemporalType.DATE)
+    private Date birthday;
+
     private String mail;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -32,6 +38,7 @@ public class User {
     private List<Bet> bets;
 
     public User() {
+        bets = new ArrayList<>();
     }
 
     public int getId() {
@@ -66,12 +73,12 @@ public class User {
         this.lastname = lastname;
     }
 
-    public Date getBithday() {
-        return bithday;
+    public Date getBirthday() {
+        return birthday;
     }
 
-    public void setBithday(Date bithday) {
-        this.bithday = bithday;
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public String getMail() {

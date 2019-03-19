@@ -2,8 +2,11 @@ package ch.axa.Objects;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "bet")
 public class Bet {
 
     @Id
@@ -13,7 +16,7 @@ public class Bet {
 
     private String title;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_IDFS")
     private User typist;
 
@@ -32,6 +35,7 @@ public class Bet {
     private List<User> involvements;
 
     public Bet() {
+        involvements = new ArrayList<>();
     }
 
     public int getId() {
