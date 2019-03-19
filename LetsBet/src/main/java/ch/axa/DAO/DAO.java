@@ -58,7 +58,7 @@ public class DAO {
      *          Return:     Optional<Bet>
      *      deleteBets
      *          Parameter:  id
-     *          Return:     -
+     *          Return:     Optional<Bet>
      *
      */
 
