@@ -3,12 +3,14 @@ package ch.axa.DAO;
 import ch.axa.Objects.Bet;
 import ch.axa.Objects.User;
 
+import javax.ejb.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.Optional;
 
+@Singleton
 public class DAO {
 
     @PersistenceContext
