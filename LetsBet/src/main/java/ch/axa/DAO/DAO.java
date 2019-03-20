@@ -96,7 +96,7 @@ public class DAO {
         return changingBet;
     }
 
-    public Optional<Bet> createPerson(Bet bet) {
+    public Optional<Bet> createBet(Bet bet) {
         List<Bet> betList = this.getBets();
 
         if (betList.size() > 0) {
@@ -108,11 +108,11 @@ public class DAO {
             bet.setId(1);
         }
 
-        betList.add(bet);
+        em.merge(bet);
         return Optional.of(bet);
     }
 
-    public Optional<Bet> deletePerson(int id) {
+    public Optional<Bet> deleteBet(int id) {
         List<Bet> betList = this.getBets();
 
         Optional<Bet> bet = betList.stream()
@@ -120,7 +120,7 @@ public class DAO {
                 .findFirst();
 
         if (bet.isPresent()) {
-            betList.remove(bet.get());
+            em.remove(bet.get());
         }
 
         return bet;

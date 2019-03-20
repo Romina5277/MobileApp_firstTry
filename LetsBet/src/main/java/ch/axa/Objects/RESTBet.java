@@ -1,43 +1,29 @@
 package ch.axa.Objects;
 
-import javax.persistence.*;
 import java.util.Date;
-import java.util.ArrayList;
-import java.util.List;
 
-@Entity
-@Table(name = "bet")
-public class Bet {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "bet_ID")
+public class RESTBet {
     private int id;
-
     private String title;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_IDFS")
-    private User typist;
-
-    @Temporal(TemporalType.DATE)
+    private RESTUser typist;
     private Date end;
-
     private String input;
     private String detail;
     private String lastchange;
     private String place;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "involvement",
-            joinColumns = {@JoinColumn(name = "bet_IDFS",
-                    referencedColumnName = "bet_ID")},
-            inverseJoinColumns = {@JoinColumn(name = "user_IDFS",
-                    referencedColumnName = "user_ID")})
-    private List<User> involvements;
+    public RESTBet() {
+    }
 
-    public Bet() {
-        involvements = new ArrayList<>();
+    public RESTBet(int id, String title, RESTUser typist, Date end, String input, String detail, String lastchange, String place) {
+        this.id = id;
+        this.title = title;
+        this.typist = typist;
+        this.end = end;
+        this.input = input;
+        this.detail = detail;
+        this.lastchange = lastchange;
+        this.place = place;
     }
 
     public int getId() {
@@ -56,11 +42,11 @@ public class Bet {
         this.title = title;
     }
 
-    public User getTypist() {
+    public RESTUser getTypist() {
         return typist;
     }
 
-    public void setTypist(User typist) {
+    public void setTypist(RESTUser typist) {
         this.typist = typist;
     }
 
@@ -102,13 +88,5 @@ public class Bet {
 
     public void setPlace(String place) {
         this.place = place;
-    }
-
-    public List<User> getInvolvements() {
-        return involvements;
-    }
-
-    public void setInvolvements(List<User> involvements) {
-        this.involvements = involvements;
     }
 }
