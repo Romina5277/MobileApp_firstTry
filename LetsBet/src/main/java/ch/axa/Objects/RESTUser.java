@@ -12,6 +12,9 @@ public class RESTUser {
     private Date birthday;
     private String mail;
 
+    public RESTUser() {
+    }
+
     public RESTUser(int id, String username, String firstname, String lastname, Date birthday, String mail) {
         this.id = id;
         this.username = username;

@@ -185,7 +185,7 @@ public class Service {
     @Path("/bet")
     @Produces({"application/json"})
     public Response createBet(RESTBet restBet) {
-        Optional<Bet> addedBet = dao.createPerson(restBetToBet(restBet));
+        Optional<Bet> addedBet = dao.createBet(restBetToBet(restBet));
 
         if(addedBet.isPresent()){
             return Response.status(201)
@@ -201,7 +201,7 @@ public class Service {
     @Path("/bet/{id}")
     @Produces({"application/json"})
     public Response deleteBet(@PathParam("id") int id) {
-        Optional<Bet> deletedBet = dao.deletePerson(id);
+        Optional<Bet> deletedBet = dao.deleteBet(id);
         List<Bet> betList = dao.getBets();
         List<RESTBet> restBetList = new ArrayList<>();
 

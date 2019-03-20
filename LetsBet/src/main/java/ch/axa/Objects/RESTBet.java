@@ -12,6 +12,9 @@ public class RESTBet {
     private String lastchange;
     private String place;
 
+    public RESTBet() {
+    }
+
     public RESTBet(int id, String title, RESTUser typist, Date end, String input, String detail, String lastchange, String place) {
         this.id = id;
         this.title = title;
