@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import RadioForm, { RadioButton, RadioButtonInput, RadioButtonLabel } from 'react-native-simple-radio-button';
 
 export default class WetteScreen extends Component {
   static navigationOptions = {
@@ -18,7 +19,7 @@ export default class WetteScreen extends Component {
 
     this.state = {
       message: "",
-      bet: [{
+      bets: [{
         id: 1,
         title: "",
         typist: {
@@ -35,28 +36,32 @@ export default class WetteScreen extends Component {
         lastchange: "",
         place: ""
       }],
+      bet: {
+        id: 1,
+        title: "",
+        typist: {
+          id: 1,
+          username: "",
+          firstname: "",
+          lastname: "",
+          birthday: "",
+          mail: ""
+        },
+        end: "",
+        input: "",
+        detail: "",
+        lastchange: "",
+        place: ""
+      },
+      array1: ["eis", "zwei", "drei", "vier"],
     }
   }
 
   componentDidMount() {
-
-    console.log("im didmount")
-
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then(response => response.json())
-      .then(users => {
-        console.log(users)
-      })
-      .catch(() => {
-        console.error()
-        console.log("Can't do the fetch: users")
-      })
-
     fetch("http://192.168.100.29:8080/LetsBet/v1/letsBet/m")
       .then(response => response.json())
       .then(message => {
-        console.log(message)
-        this.setState({ message: message })
+        this.setState({ message: message.message })
       })
       .catch(() => {
         console.error()
@@ -65,17 +70,13 @@ export default class WetteScreen extends Component {
 
     fetch("http://192.168.100.29:8080/LetsBet/v1/letsBet/bets")
       .then(response => response.json())
-      .then(bet => {
-        console.log("im fetch")
-        console.log(bet)
-        //this.setState({ bet: bet })
+      .then(bets => {
+        this.setState({ bets: bets })
       })
       .catch(() => {
         console.error()
         console.log("Can't do the fetch: Bets")
       })
-
-    console.log("after fetch")
   }
 
   _handleHelpPressDelete = () => {
@@ -93,10 +94,11 @@ export default class WetteScreen extends Component {
           <Text>{this.state.message}</Text>
           <Text>{"\n"}</Text>
           <Text>{"\n"}</Text>
-          {this.state.bet.map((b) => {
+          {this.state.bets.map((b) => {
             return (
-              <View key={b.id}>
-                <Text>{b.title}         {b.typist.username}</Text>
+              <View>
+                <Text>{b.title}</Text>
+                <Text>{b.typist.username}</Text>
                 <Text>{b.end}</Text>
                 <Text>{b.input}</Text>
                 <Text>{"\n"}</Text>
@@ -104,6 +106,7 @@ export default class WetteScreen extends Component {
               </View>
             );
           })}
+
         </ScrollView>
         <View style={styles.tabBarInfoContainer}>
           <TouchableOpacity onPress={() => navigate('WetteForm')} style={styles.helpLink}>
@@ -115,7 +118,7 @@ export default class WetteScreen extends Component {
           <TouchableOpacity onPress={this._handleHelpPressDelete} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>Delete</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigate('WetteInfos')} style={styles.helpLink}>
+          <TouchableOpacity onPress={() => navigate('WetteInfos', this.state.bets.find((b) => { return b.id == 1 }))} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>Info</Text>
           </TouchableOpacity>
         </View>

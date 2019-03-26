@@ -8,14 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cc19d7fb-d6b0-45c9-a04c-fc0933a811ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../letsbet-app/navigation/BetNavigator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../letsbet-app/navigation/MainTabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/navigation/MainTabNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../letsbet-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/FriendsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/FriendsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/MeldungScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/MeldungScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/ProfilScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/ProfilScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/WetteFormScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/WetteFormScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/WetteInfosScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/WetteInfosScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/WetteScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/WetteScreen.js" afterDir="false" />
     </list>
@@ -55,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/Service.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -72,6 +66,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/CORSFilter.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -110,7 +109,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="3-Backend-erstellen" />
+        <entry key="$PROJECT_DIR$/.." value="4.2-Navigation-and-Screens-Frontend" />
       </map>
     </option>
   </component>
@@ -127,13 +126,15 @@
         <option value="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTBet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/axa/Service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/axa/Service/CORSFilter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -210,6 +211,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch.axa.Service" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -379,7 +385,7 @@
       <workItem from="1553262621005" duration="97000" />
       <workItem from="1553265930507" duration="648000" />
       <workItem from="1553519518466" duration="4252000" />
-      <workItem from="1553586284957" duration="619000" />
+      <workItem from="1553586284957" duration="1525000" />
     </task>
     <task id="LOCAL-00001" summary="Backend aufgesetzt und erste Klassen vorbereitet">
       <created>1552492245652</created>
@@ -444,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553106588456</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fetches vorbereitet">
+      <created>1553593336644</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553593336645</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31631000" />
+    <option name="totallyTimeSpent" value="32537000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,7 +473,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -553,7 +566,8 @@
     <MESSAGE value="Listen initialisiert im Construktor" />
     <MESSAGE value="REST-Objekte erstellt" />
     <MESSAGE value="Service abgeändert mit REST-Objekte" />
-    <option name="LAST_COMMIT_MESSAGE" value="Service abgeändert mit REST-Objekte" />
+    <MESSAGE value="Fetches vorbereitet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fetches vorbereitet" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LetsBet.iml">
@@ -670,6 +684,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/CORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
