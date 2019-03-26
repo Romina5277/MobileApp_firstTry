@@ -1,8 +1,6 @@
 package ch.axa.Objects;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class RESTUser {
     private int id;

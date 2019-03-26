@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import { ExpoConfigView } from '@expo/samples';
 
-export default class SettingsScreen extends React.Component {
+export default class FriendsScreen extends React.Component {
   static navigationOptions = {
     title: 'Find Friends',
   };

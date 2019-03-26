@@ -6,7 +6,7 @@ import {
   View,
 } from 'react-native';
 
-export default class SettingsScreen extends React.Component {
+export default class ProfilScreen extends React.Component {
   static navigationOptions = {
     title: 'Your Profil',
   };

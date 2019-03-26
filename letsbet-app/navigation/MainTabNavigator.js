@@ -29,7 +29,12 @@ MeldungStack.navigationOptions = {
 
 const WetteStack = createStackNavigator({
   Wette: WetteScreen,
-});
+  WetteForm: WetteFormScreen,
+  WetteInfos: WetteInfosScreen,
+},
+  {
+    initialRouteName: "Wette"
+  });
 
 WetteStack.navigationOptions = {
   tabBarLabel: 'Wette',
@@ -54,8 +59,6 @@ ProfilStack.navigationOptions = {
     />
   ),
 };
-
-
 
 export default createBottomTabNavigator({
   MeldungStack,

@@ -6,34 +6,80 @@ import {
   Platform,
   TouchableOpacity,
   View,
-  Button,
 } from 'react-native';
 
-export default class LinksScreen extends Component {
+export default class WetteScreen extends Component {
   static navigationOptions = {
     title: 'Wetten',
   };
 
   constructor(props) {
     super(props)
+
+    this.state = {
+      message: "",
+      bet: [{
+        id: 1,
+        title: "",
+        typist: {
+          id: 1,
+          username: "",
+          firstname: "",
+          lastname: "",
+          birthday: "",
+          mail: ""
+        },
+        end: "",
+        input: "",
+        detail: "",
+        lastchange: "",
+        place: ""
+      }],
+    }
   }
 
-  _handleHelpPressNew = () => {
-    console.log("New")
-    this.props.navigation.navigate('WetteForm')
-  };
+  componentDidMount() {
 
-  _handleHelpPressEdit = () => {
-    console.log("Edit")
-  };
+    console.log("im didmount")
+
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(users => {
+        console.log(users)
+      })
+      .catch(() => {
+        console.error()
+        console.log("Can't do the fetch: users")
+      })
+
+    fetch("http://192.168.100.29:8080/LetsBet/v1/letsBet/m")
+      .then(response => response.json())
+      .then(message => {
+        console.log(message)
+        this.setState({ message: message })
+      })
+      .catch(() => {
+        console.error()
+        console.log("Can't do the fetch: Message")
+      })
+
+    fetch("http://192.168.100.29:8080/LetsBet/v1/letsBet/bets")
+      .then(response => response.json())
+      .then(bet => {
+        console.log("im fetch")
+        console.log(bet)
+        //this.setState({ bet: bet })
+      })
+      .catch(() => {
+        console.error()
+        console.log("Can't do the fetch: Bets")
+      })
+
+    console.log("after fetch")
+  }
 
   _handleHelpPressDelete = () => {
-    console.log("Delete")
     alert("Do you really wanna delete this bet?")
-  };
-
-  _handleHelpPressInfo = () => {
-    console.log("Info")
   };
 
   render() {
@@ -42,22 +88,34 @@ export default class LinksScreen extends Component {
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <Text>Hier werden die Wetten ausgegeben!</Text>
-          <Button
-            title="Go to WetteForm"
-            onPress={() => navigate('WetteForm')}
-          />
+          <Text>{"\n"}</Text>
+          <Text>{"\n"}</Text>
+          <Text>{this.state.message}</Text>
+          <Text>{"\n"}</Text>
+          <Text>{"\n"}</Text>
+          {this.state.bet.map((b) => {
+            return (
+              <View key={b.id}>
+                <Text>{b.title}         {b.typist.username}</Text>
+                <Text>{b.end}</Text>
+                <Text>{b.input}</Text>
+                <Text>{"\n"}</Text>
+                <Text>{"\n"}</Text>
+              </View>
+            );
+          })}
         </ScrollView>
         <View style={styles.tabBarInfoContainer}>
-          <TouchableOpacity onPress={this._handleHelpPressNew} style={styles.helpLink}>
+          <TouchableOpacity onPress={() => navigate('WetteForm')} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>New</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this._handleHelpPressEdit} style={styles.helpLink}>
+          <TouchableOpacity onPress={() => navigate('WetteForm')} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>Edit</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={this._handleHelpPressDelete} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>Delete</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this._handleHelpPressInfo} style={styles.helpLink}>
+          <TouchableOpacity onPress={() => navigate('WetteInfos')} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>Info</Text>
           </TouchableOpacity>
         </View>

@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
 
-export default class LinksScreen extends React.Component {
+export default class WetteInfosScreen extends React.Component {
   static navigationOptions = {
     title: 'Infos',
   };
@@ -16,7 +16,6 @@ export default class LinksScreen extends React.Component {
     return (
       <ScrollView style={styles.container}>
         <Text>Hier werden die Details der Wetten ausgegeben!</Text>
-        <ExpoLinksView />
       </ScrollView>
     );
   }

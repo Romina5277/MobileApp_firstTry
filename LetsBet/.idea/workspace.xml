@@ -6,7 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc19d7fb-d6b0-45c9-a04c-fc0933a811ae" name="Default Changelist" comment="" />
+    <list default="true" id="cc19d7fb-d6b0-45c9-a04c-fc0933a811ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/navigation/BetNavigator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/navigation/MainTabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/navigation/MainTabNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/FriendsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/FriendsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/MeldungScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/MeldungScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/ProfilScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/ProfilScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/WetteFormScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/WetteFormScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/WetteInfosScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/WetteInfosScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../letsbet-app/screens/WetteScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../letsbet-app/screens/WetteScreen.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/DAO/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+            <state relative-caret-position="1751">
+              <caret line="111" column="32" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,16 +58,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="202" column="56" selection-start-line="202" selection-start-column="56" selection-end-line="202" selection-end-column="56" />
+            <state relative-caret-position="357">
+              <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#restUserToUser#0;class#Service#0" />
                 <element signature="method#userToRESTUser#0;class#Service#0" />
                 <element signature="method#getUsers#0;class#Service#0" />
                 <element signature="method#getUser#0;class#Service#0" />
                 <element signature="method#betToRESTBet#0;class#Service#0" />
                 <element signature="method#getBets#0;class#Service#0" />
+                <element signature="method#getBet#0;class#Service#0" />
+                <element signature="method#deleteBet#0;class#Service#0" />
               </folding>
             </state>
           </provider>
@@ -64,19 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
-                <element signature="e#1306#1307#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="765">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
@@ -84,11 +86,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTBet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="680">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
-                <element signature="e#1158#1159#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,18 +123,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ch/axa/Objects/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/axa/Objects/Bet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/axa/DAO/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTBet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/axa/Service/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ch/axa/DAO/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,6 +183,15 @@
               <item name="axa" type="462c0819:PsiDirectoryNode" />
               <item name="Objects" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LetsBet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LetsBet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="axa" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -193,7 +203,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553002948328" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553527129422" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Schule/5IA16b/M183/work/BasicSecurityArrangementStart" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -366,6 +376,10 @@
       <workItem from="1552633935292" duration="644000" />
       <workItem from="1552897678946" duration="22447000" />
       <workItem from="1553068737614" duration="721000" />
+      <workItem from="1553262621005" duration="97000" />
+      <workItem from="1553265930507" duration="648000" />
+      <workItem from="1553519518466" duration="4252000" />
+      <workItem from="1553586284957" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="Backend aufgesetzt und erste Klassen vorbereitet">
       <created>1552492245652</created>
@@ -434,7 +448,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26015000" />
+    <option name="totallyTimeSpent" value="31631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -446,32 +460,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18053691" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18590604" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Persistence" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3298731" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3298731" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.40509915" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.40509915" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3298731" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.1407151" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3298731" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3298731" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3286119" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -546,16 +561,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Objects/Friends.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Objects/Involvement.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/RESTService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -602,10 +607,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../letsbet-app/screens/FriendsScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/RESTService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/DAO/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+        <state relative-caret-position="1751">
+          <caret line="111" column="32" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -614,45 +638,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="765">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Objects/RESTBet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="680">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="202" column="56" selection-start-line="202" selection-start-column="56" selection-end-line="202" selection-end-column="56" />
+        <state relative-caret-position="357">
+          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#restUserToUser#0;class#Service#0" />
             <element signature="method#userToRESTUser#0;class#Service#0" />
             <element signature="method#getUsers#0;class#Service#0" />
             <element signature="method#getUser#0;class#Service#0" />
             <element signature="method#betToRESTBet#0;class#Service#0" />
             <element signature="method#getBets#0;class#Service#0" />
+            <element signature="method#getBet#0;class#Service#0" />
+            <element signature="method#deleteBet#0;class#Service#0" />
           </folding>
         </state>
       </provider>

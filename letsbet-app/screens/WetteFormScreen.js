@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
 
-export default class LinksScreen extends React.Component {
+export default class WetteFormScreen extends React.Component {
   static navigationOptions = {
     title: 'New / Edit',
   };
@@ -16,7 +16,6 @@ export default class LinksScreen extends React.Component {
     return (
       <ScrollView style={styles.container}>
         <Text>Hier wird man die Wetten bearbeiten können und neue Wetten erstellen!</Text>
-        <ExpoLinksView />
       </ScrollView>
     );
   }
