@@ -67,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/CORSFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            <state relative-caret-position="255">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -386,7 +386,7 @@
       <workItem from="1553265930507" duration="648000" />
       <workItem from="1553519518466" duration="4252000" />
       <workItem from="1553586284957" duration="1763000" />
-      <workItem from="1553672749320" duration="1329000" />
+      <workItem from="1553672749320" duration="1591000" />
     </task>
     <task id="LOCAL-00001" summary="Backend aufgesetzt und erste Klassen vorbereitet">
       <created>1552492245652</created>
@@ -472,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553700046042</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Die Grundlagen für das Erstellen, Ändern und Löschen von Wetten ist nun gegeben. Als nächstes folgt nur noch, die Location und die Zeit auszulesen und die Änderung in die Datenbank zu bringen.">
+      <created>1553700476367</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1553700476367</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34104000" />
+    <option name="totallyTimeSpent" value="34366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/CORSFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        <state relative-caret-position="255">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
