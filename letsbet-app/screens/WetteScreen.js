@@ -88,12 +88,6 @@ export default class WetteScreen extends Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <Text>Hier werden die Wetten ausgegeben!</Text>
-          <Text>{"\n"}</Text>
-          <Text>{"\n"}</Text>
-          <Text>{this.state.message}</Text>
-          <Text>{"\n"}</Text>
-          <Text>{"\n"}</Text>
           {this.state.bets.map((b) => {
             return (
               <View>
@@ -112,7 +106,7 @@ export default class WetteScreen extends Component {
           <TouchableOpacity onPress={() => navigate('WetteForm')} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>New</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigate('WetteForm')} style={styles.helpLink}>
+          <TouchableOpacity onPress={() => navigate('WetteForm', this.state.bets.find((b) => { return b.id == 1 }))} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>Edit</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={this._handleHelpPressDelete} style={styles.helpLink}>

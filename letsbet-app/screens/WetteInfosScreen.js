@@ -15,24 +15,38 @@ export default class WetteInfosScreen extends React.Component {
   constructor(props) {
     super(props)
 
+    const { navigation } = this.props;
+
     this.state = {
-      bet: this.props.bet
+      id: navigation.getParam('id', 0),
+      title: navigation.getParam('title', 'no title'),
+      typist: navigation.getParam('typist', {
+        id: 0,
+        username: "",
+        firstname: "",
+        lastname: "",
+        birthday: "",
+        mail: ""
+      }),
+      end: navigation.getParam('end', 'no end'),
+      input: navigation.getParam('input', 'no input'),
+      detail: navigation.getParam('detail', 'no detail'),
+      lastchange: navigation.getParam('lastchange', 'no change'),
+      place: navigation.getParam('place', 'no place')
     }
-    console.log("hallo")
   }
 
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text>Hier werden die Details der Wetten ausgegeben!</Text>
-        <Text>Titel:          {this.state.bet.title}</Text>
-        <Text>Beschreibung:   {this.state.bet.detail}</Text>
-        <Text>Mit:            {this.state.bet.typist.firstname} {this.state.typist.lastname}</Text>
-        <Text>Endet am:       {this.state.bet.end}</Text>
+        <Text>Titel:          {this.state.title}</Text>
+        <Text>Beschreibung:   {this.state.detail}</Text>
+        <Text>Von:            {this.state.typist.firstname} {this.state.typist.lastname}</Text>
+        <Text>Endet am:       {this.state.end}</Text>
         <Text>{"\n"}</Text>
         <Text>Letzte Änderung</Text>
-        <Text>Last change:    {this.state.bet.lastchange}</Text>
-        <Text>Ort:            {this.state.bet.place}</Text>
+        <Text>Last change:    {this.state.lastchange}</Text>
+        <Text>Ort:            {this.state.place}</Text>
       </ScrollView>
     );
   }

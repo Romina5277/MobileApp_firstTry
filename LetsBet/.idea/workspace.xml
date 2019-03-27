@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc19d7fb-d6b0-45c9-a04c-fc0933a811ae" name="Default Changelist" comment="Wetten können nun in gekürzer form ausgegeben werden. Die übergabe für auf den Detailierteren Screen funktioniert jedoch leider noch nit. Eine auswahl bei den Wetten gibt es ebenso noch nicht.">
+    <list default="true" id="cc19d7fb-d6b0-45c9-a04c-fc0933a811ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/CORSFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -386,7 +386,7 @@
       <workItem from="1553265930507" duration="648000" />
       <workItem from="1553519518466" duration="4252000" />
       <workItem from="1553586284957" duration="1763000" />
-      <workItem from="1553672749320" duration="1047000" />
+      <workItem from="1553672749320" duration="1329000" />
     </task>
     <task id="LOCAL-00001" summary="Backend aufgesetzt und erste Klassen vorbereitet">
       <created>1552492245652</created>
@@ -465,11 +465,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553616921600</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Die Grundlagen für das Erstellen, Ändern und Löschen von Wetten ist nun gegeben. Als nächstes folgt nur noch, die Location und die Zeit auszulesen und die Änderung in die Datenbank zu bringen.">
+      <created>1553700046042</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553700046042</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33822000" />
+    <option name="totallyTimeSpent" value="34104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,7 +583,8 @@
     <MESSAGE value="Service abgeändert mit REST-Objekte" />
     <MESSAGE value="Fetches vorbereitet" />
     <MESSAGE value="Wetten können nun in gekürzer form ausgegeben werden. Die übergabe für auf den Detailierteren Screen funktioniert jedoch leider noch nit. Eine auswahl bei den Wetten gibt es ebenso noch nicht." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wetten können nun in gekürzer form ausgegeben werden. Die übergabe für auf den Detailierteren Screen funktioniert jedoch leider noch nit. Eine auswahl bei den Wetten gibt es ebenso noch nicht." />
+    <MESSAGE value="Die Grundlagen für das Erstellen, Ändern und Löschen von Wetten ist nun gegeben. Als nächstes folgt nur noch, die Location und die Zeit auszulesen und die Änderung in die Datenbank zu bringen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Die Grundlagen für das Erstellen, Ändern und Löschen von Wetten ist nun gegeben. Als nächstes folgt nur noch, die Location und die Zeit auszulesen und die Änderung in die Datenbank zu bringen." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LetsBet.iml">
@@ -696,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch/axa/Service/CORSFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
         </state>
       </provider>
     </entry>
