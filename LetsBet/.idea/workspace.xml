@@ -386,7 +386,7 @@
       <workItem from="1553265930507" duration="648000" />
       <workItem from="1553519518466" duration="4252000" />
       <workItem from="1553586284957" duration="1763000" />
-      <workItem from="1553672749320" duration="1591000" />
+      <workItem from="1553672749320" duration="1611000" />
     </task>
     <task id="LOCAL-00001" summary="Backend aufgesetzt und erste Klassen vorbereitet">
       <created>1552492245652</created>
@@ -479,11 +479,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553700476367</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Die Grundlagen für das Erstellen, Ändern und Löschen von Wetten ist nun gegeben. Als nächstes folgt nur noch, die Location und die Zeit auszulesen und die Änderung in die Datenbank zu bringen.">
+      <created>1553700496189</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1553700496189</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34366000" />
+    <option name="totallyTimeSpent" value="34386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,7 +503,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-87" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -514,7 +520,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3298731" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
