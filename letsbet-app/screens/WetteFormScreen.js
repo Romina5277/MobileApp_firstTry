@@ -16,6 +16,8 @@ export default class WetteFormScreen extends React.Component {
   constructor(props) {
     super(props)
 
+
+
     const { navigation } = this.props;
 
     this.state = {
@@ -42,10 +44,18 @@ export default class WetteFormScreen extends React.Component {
         birthday: "",
         mail: "5ia15lutschanz@lernende.bbw.ch"
       },
+      edit: false
     }
   }
 
   componentDidMount() {
+
+    if (this.state.id != 0) {
+      console.log("edit = true")
+      this.setState({
+        edit: true
+      })
+    }
 
     console.log(" befor searching location ")
 
@@ -101,6 +111,70 @@ export default class WetteFormScreen extends React.Component {
   }
 
   _handleButtonSave = () => {
+
+    if (!this.state.edit) {
+      console.log("if (!this.state.edit)")
+    } else {
+      console.log("else (!this.state.edit)")
+    }
+
+    if (this.state.edit == false) {
+      console.log("if (this.state.edit == false)")
+    } else {
+      console.log("else (this.state.edit == false)")
+    }
+
+    if (!this.state.edit) {
+      console.log("new!!!!!!!!!!!!!!!!!!")
+      fetch('http://localhost:8080/LetsBet/v1/letsBet/bet', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          bet: {
+            id: this.state.id,
+            title: this.state.title,
+            typist: this.state.typist,
+            end: this.state.end,
+            input: this.state.input,
+            detail: this.state.detail,
+            lastchange: this.state.lastchange,
+            place: this.state.place,
+          }
+        })
+      })
+        .catch(() => {
+          console.error()
+          console.log("Can't do the fetch: new")
+        })
+    } else {
+      console.log("edit!!!!!!!!!!!!!!!!!")
+      fetch('http://localhost:8080/LetsBet/v1/letsBet/bet/' + this.state.id, {
+        method: 'PUT',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          bet: {
+            id: this.state.id,
+            title: this.state.title,
+            typist: this.state.typist,
+            end: this.state.end,
+            input: this.state.input,
+            detail: this.state.detail,
+            lastchange: this.state.lastchange,
+            place: this.state.place,
+          }
+        })
+      })
+        .catch(() => {
+          console.error()
+          console.log("Can't do the fetch: edit")
+        })
+    }
 
     this.props.navigation.navigate('Wette')
   }

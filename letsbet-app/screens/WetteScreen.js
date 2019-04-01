@@ -116,7 +116,7 @@ export default class WetteScreen extends Component {
             <Text style={styles.helpLinkText}>Info</Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </View >
     );
   }
 }
